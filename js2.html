@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+    <h1 id="test"> Sayısal ve  Sözel Değişken , Operatörler  </h1>
+<script>
+   /* Operatör işlevselliği. 
+       +=	x += y  	x = x + y
+       -=	x -= y  	x = x - y
+       *=	x *= y	    x = x * y
+       /=	x /= y  	x = x / y
+       %=	x %= y  	x = x % y
+      **=	x **= y 	x = x ** y
+        &&	 logical ve 
+        ||	 logical veya
+        !    logical değil
+      <<=	x <<= y     x = x << y
+      >>=	x >>= y	    x = x >> y
+      >>>=	x >>>= y	x = x >>> y
+      &=	x &= y	    x = x & y
+      ^=	x ^= y	    x = x ^ y
+      |=	x |= y	    x = x | y
+      &&=	x &&= y  	x = x && (x = y)
+      ||=	x ||= y   	x = x || (x = y)
+      ??=	x ??= y	    x = x ?? (x = y)
+    */
+   // typeof(değişken adı) yazıldığında değişken türümüzü öğreniriz.
+   var x=5;
+   document.write("veri tipi:"+ typeof(x)+"<br>");
+  var  y="ad";
+   document.write("veri tipi:"+ typeof(y)+"<br>");
+
+   /* Yazılan ifadeler soldan sağa doğru çalışır. Bu nedenle 3+5 toplanarak metne dahil olmuştur.*/
+   var a =5+"hem sayısal hem sözel";
+   document.write(a+"<br>");
+   var b=3+5+"hem sayısal hem sözel";
+   document.write(b+"<br>");
+   var c="hem_sayısal_hem_sözel"+3+5;
+   document.write(c+"<br>");
+   
+   //string yani metinsel ifadelerde tek tırnak yada çift tırnak farketmez.
+   var d="metin";
+   document.write(d+"<br>");
+   var e='metin';
+   document.write(e+"<br>");
+   var cumle='Bilindik bir replik olan <br> " Mathilda: Hayat hep böyle zor mudur, yoksa sadece çocuk olduğunda mı böyle gelir? <br> Leon: Hep böyledir." <br> çok severim.';
+   document.write(cumle+"<br>");
+</script>
+</body>
+</html>
