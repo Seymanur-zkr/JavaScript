@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <h1> Toplama işlemi </h1><br> 
+        <script>
+            // Buradaki toplama string toplamasıdır . Yani metinseldir sayısal değildir.Sayısala çevirdiğimizde stringte eror vericektir.
+            //Ekrandan iki sayı alalım ve toplayalım .
+            //Birinci sayımızı alalım.
+            var s1=prompt("Birinci sayıyı giriniz.");
+         //string yapıssından kurtaralım.
+            s1=Number(s1);
+            //İkinci sayımızı alalım.
+            var s2=Number(prompt("İkinci sayınızı giriniz."));
+            // Toplam için ayrı bir değişken açmadan da yapabilsekte örnek için açıyorum.
+        //string yapıssından kurtaralım.
+           // s2=Number(s2); Yani tür dönüşümünde belirtmemiz yeterlidir.
+            var toplam=s1+s2;
+            //toplamı ekrana yazdıralım.
+            alert("toplam="+toplam);
+            // eğer karelesini s1 in a dersek
+            // kare=s1*S1; yazmak yeterli olacaktır.
+/* 
+3 SAYI ORTALAMASI
+      Eğer üç sayı ortalaması alınacak olursa 
+      İlk olarak 3 sayı girişi yaparız.
+      sonra ise onları toplar 3 e böleriz.
+      ort=(s1+s2+S3)/3;
+      alert("Ortalama="+ort);
+*/
+
+        </script>
+
+  
+
+    </body>
+</html>
