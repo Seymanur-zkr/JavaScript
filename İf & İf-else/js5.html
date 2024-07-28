@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            /*
+            Karar Yapısı (Sorgu) komutları:
+            if 
+            if-else
+            if-else if-else 
+            */
+
+            /* İf komutu
+            Eğer sorusunu sorarak 
+            cevap olarak evet hayır seçeneğine göre 
+             2yola göre farklı işleme yönlendirme yapar.
+              iki kullanımı bulunur.
+             birden fazla komut bulunma durumu    /    bir komut bulunma durumu 
+                     if(şart)                    /             if(şart)
+                     {                           /             komut;
+                     komut1;
+                     komut2;
+                      }                                            
+              şeklindedir.
+            */
+             var yas=Number(prompt("yaşınız:"));
+             if(yas<18)
+             document.write("Sitemizin kurallarını yaşınız karşılamamaktadır.");
+            document.write("<br>"); // Bu iki satırı if süslü paranteze sahip olmadığı için onlar ayrı değerlendirilir.
+            document.write("Sitemize hoşgeldiniz."); // Yani direk sayfaya yazılır.
+        </script>
+    </body>
+
+</html>
