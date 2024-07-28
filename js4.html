@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+       <br> 
+        <script>
+            //Birinci sayımızı alalım.
+            var a=prompt("Birinci sayıyı giriniz.");
+         //string yapısından kurtaralım.
+            a=Number(a);
+            //İkinci sayımızı alalım.
+            var b=Number(prompt("İkinci sayınızı giriniz."));
+             
+            var topla=a+b;
+            var cikar=a-b;
+            var carpma=a*b;
+            var bolme=a/b;
+            var modKalan=a%b;
+
+            alert("toplam="+ topla+ "çıkarma="+ cikar+"çarpma="+ carpma+"bölme="+ bolme+ "modd="+ modKalan);
+
+            /*
+            ++x Önce x'i 1 arttırır daha sonra atama yapar.
+            x++ Önce x değerini kullanır işlemden sonra x'i 1 arttırır.
+            --x Önce x'i 1 azaltıp daha sonra atama yapar.
+            x-- Önce x değeri kullanılır işlem sonrası x'i 1 azaltır.
+
+            var A=2;
+            document.write(A++); şeklinde yazımı yapılabilir.
+
+            */
+           
+            /*
+             
+            Örnek operatörler;
+
+            == eşit ise
+            != eşit değil farklı ise
+            >  büyük ise
+            < küçük ise
+            >= büyük eşit ise
+            <= küçük eşit ise            
+           */
+
+           /*
+           = atama içindir eşitlik sağındaki işlem yapılarak sola atama yapılır.
+           += örneğin x+=y şeklinde kullanılırken anlamı ise x=x+y demektir.
+           -= örneğin x-=y şeklinde kullanılırken anlamı ise x=x-y demektir.
+           *= örneğin x*=y şeklinde kullanılırken anlamı ise x=x*y demektir.
+           /= örneğin x/=y şeklinde kullanılırken anlamı ise x=x/y demektir.
+           %= örneğin x%=y şeklinde kullanılırken anlamı ise x=x%y demektir.
+
+           Eğer aynı ifade içerisinde birden fazla opetarör kulllanılırsa 
+           operatörlerin öncelik sırasına göre dikkat etmeliyiz.
+           1                              ()
+           2                             x++,x--
+           3                             ++y,--y
+           4                             *,/,%
+           5                             +,-
+           6                             <<,>>
+           7                             >,<,<=,>=
+           8                             ==,!= 
+           9                             &
+           10                            ^
+           11                            |
+           12                            &&
+           13                            ||
+           şeklinde sıralama mevcuttur.
+           */
+        </script>
+
+  
+
+    </body>
+</html>
