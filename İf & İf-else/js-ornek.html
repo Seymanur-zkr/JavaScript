@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1> Pozitif Sayıların Karesi </h1>
+        <script>
+            //Değişkenleri atayalım.
+            var sayi, kare;
+            //sayıyı alalım.
+            sayi=Number(prompt("sayıyı giriniz:"));
+            //sorgumuzu yapalım.
+            if(sayi<0){
+                alert("Sayınız negatiftir.!");
+                alert("F5 ile sayfanızı yenileyerek yeni sayı alın.");
+            }
+            else{
+                kare=sayi*sayi
+                alert("Kare="+kare);
+            }
+        </script>
+        <h2> Dairenin Alanı ve Çevresi </h2>
+        <script>
+            // değişkenlerimizi tanımlayalım.
+            var r, alan, cevre, pi=3.14;
+            //yarıçapı alalım
+            r=Number(prompt("yarıçapını giriniz:"));
+            //işlemimiz.
+            if(r<=0){
+                alert("r pozitif olmalıdır. F5 ile sayfanızı yenileyerek tekrar deneyiniz.");
+            }
+            else{
+                alan=pi*r*r;
+                cevre=2*pi*r;
+                alert("Alan= "+alan+" Çevre= "+cevre);
+            }
+        </script>
+        <h1> Sayılardan büyük olanı bulma </h1>
+        <script>
+            //değişkenlerimizi atayalım.
+            var x,y;
+            //x değerini alalım.
+            x=Number(prompt("İlk sayıyı giriniz:"));
+            //y değerini alalım.
+            y=Number(prompt("İkinci sayınnızı giriniz:"));
+            // Sorgumuzu yazalım
+            if(x==y)
+                 alert("Sayılarınız birbirine eşittir.");
+            else if(x>y)
+                 alert("Birinci sayınız büyüktür.");
+            else
+                 alert("İkinci sayınız büyüktür.");
+        </script>
+        <h1></h1>
+    </body>
+</html>
