@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+ </head>
+<body>
+    <h1> Break ve continue Komutları </h1>
+    <p>Break ve Continue komutları döngülerin akışlarını kontrol etmek için kullanılır.
+        Break komutu döngüyü sonlandırırken,
+        Continue komutu döngüde belli şarta uyan adımın atlanmasını sağlar.
+    </p>
+    <script>
+        for( var i=1; i<=5; i++)
+        {
+            //if(i==3) continue; Döngüdeki bu aşamayı atlatır.
+            // eğer üstte olmazsa işlevsizleşebilir.
+            //if(i==3)break; Döngüden çık, dögüyü sonlandırır. 
+            // eğer break komutu yazıdan önce gelmeseydi 3 de yazar sonra döngümüz durardı.
+            document.write("i="+i+"<br>");
+        }
+          
+    </script>
+    <h1> Sonsuz ve Ölü Döngüler </h1>
+    <p> Eğer döngüdeki şart sürekli sağlanırsa sonsuz yani hiç bitmeyen bir döngü oluşur. Bilgisayar kilitlenebilir. </p>
+    <p> Örnek olarak aşağıdaki kod satırımız verilebilir;<br>
+        var x=5, y=10;<br>
+        while(x küçüktür y)<br>
+        document.write("x küçüktür.");<br>
+    </p>
+    <p> Eğer bir döngüdeki şart hiç sağlanmazsa ölü yani 
+        hiç çalışmayan bir döngü oluşur.
+    </p>
+    <p> Örnek olarak aşağıdaki kod satırımız verilebilir;<br>
+      var x=5, y=10;
+      while(x büyüktür y)<br>
+      document.write("x küçük");
+    </p>
+</body>
+</html>
