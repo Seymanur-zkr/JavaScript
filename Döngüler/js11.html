@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+        <meta charset="utf-8">
+     </head>
+    <body>
+        <h1> Do-while Döngüsü</h1>
+        <p>
+            While döngüsüne benzerdir ancak while şart sağlanmazken çalışmazdı yani önceliği işlemde değil şartta bağlıydı .
+            Bunun aksine Do-while döngüsü ilk bir kez çalışır daha sonra şart sağlanıyor kontrolü  yapar.
+        </p>
+        <script>
+            /* do- while döngü yapısı
+               do
+               {
+                işlemler;
+               }
+               while(şart);
+            
+            */
+           
+           // örnek olarak tekrar sayfaya 5 defa merhaba yazdıralım.
+           var s=1;
+           do
+           {
+            document.write("merhaba<br>");
+            s++
+           }
+           while(s<=5);
+           document.write("<br");
+           document.write("<br");
+
+           // 1'den 5'e kadar olan sayıların toplamı
+         var s=1,toplam=0;
+            do{
+               document.write("Döngü içindeki sayaç="+s); //ek olarak bunu da ekleyebiliriz.
+               toplam=toplam+s;
+               document.write("Döngü içindeki toplam="+toplam); //ek olarak bunu da ekleyebiliriz.
+               s++;
+               document.write("<br>");
+            } while(s<=15);
+            document.write("Toplam="+toplam);
+            document.write("<br>");
+            document.write("<br>");
+            
+            
+            /*
+        Ekrana bir pozitif sayı girilinceye kadar  yeni değer istenmektedir.
+        pozitif girildiği anda döngümüz sona ermektedir ve okunan değer ekrana yazılmaktadır.
+            */
+           var s;
+           do{
+            // s sıfırdan küçük olduğu sürece (negtif) işlemi yapar.
+            s=Number(this.prompt("Pozitif sayı giriniz."));
+           }while(s<=0);
+           document.write("Girmiş olduğunuz pozitif sayınız:"+s);
+          /*while(s<=0);
+          kare=s*s;
+          document.write("sayınızın karesi:"+s);
+          */
+        </script>
+    </body>
+    </html>
