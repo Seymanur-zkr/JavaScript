@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+        <meta charset="utf-8">
+     </head>
+    <body>
+        <h1> While Döngüsü </h1>
+        <p>
+            Döngü sayısının belli olmadığı durumlarda while döngüsü kullanılır.
+            Belirtilen şart sağlandığı sürece döngü döngü çalışmaya devam eder.
+            Önce şart kontrol edilir; eğer şart sağlanırsa işlem yapılır ve döngü devam eder.
+            Şart sağlanmadığı durum da döngüden çıkarak diğer adıma geçilir.
+        </p>
+        <script>
+            /*
+            While döngüsü 
+            Çok komut çalıştırılacaksa        /      Tek komut çalıştırılacaksa
+             while(şart)                      /        while(şart)
+             {                                /          işlem;
+               işlem1;
+               işlem2;
+               işlem3;
+               ...
+             }
+            
+            */
+           //Ekrana 5 defa merhaba yazdıralım.
+           var s=1; //Sayaç değişkenimiz.
+           while(s<=5) // s=5 veya daha küçükse
+           {
+            document.write("Merhaba<br>");
+            s++;      // İşlemden sonra s bir arttırılır.
+           }
+           document.write("<br>");  
+           document.write("<br>");
+
+
+
+           // 1'den 5'e kadar olan sayıların toplamı 
+           var a=1,toplam=0;     // Sayaç ve toplam değişkeni atarız.
+           while(a<=5)           //a==5 veya daha küçükse 
+           {
+            toplam=toplam+a;     // Sayaç değişkenini top değişkeninde topla 
+            a++;                 // a değerini 1 arttır.
+           }
+           document.write("Toplam="+toplam);
+           document.write("<br>");  
+           document.write("<br>");  
+        
+        
+           // Normalde böyle ancak ek olarak şöylede yapılabilir.
+         var a=1,toplam=0;     // Sayaç ve toplam değişkeni atarız.
+           while(a<=5)           //a==5 veya daha küçükse 
+           {
+             document.write("Sayaç:"+a);
+             toplam=toplam+a;     // Sayaç değişkenini top değişkeninde topla 
+             document.write("<br>");  
+             document.write("Döngü içindeki toplam="+toplam); 
+             a++;                 // A değerini 1 arttır.
+             document.write("<br>");  
+            }
+           document.write("Toplam="+toplam);
+           
+        </script>
+    </body>
+    </html>
