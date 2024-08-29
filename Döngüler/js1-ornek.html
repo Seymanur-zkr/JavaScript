@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+     <head>
+        <meta charset="utf-8">
+     </head>
+    <body>
+        <script>
+            // 1'den n'e kadar olan sayıların yazdırılması:
+            // değişkenlerimizi tanımlayalım.
+            var n,s;
+            // n değerini okuyalım
+            n=Number(prompt("n  sayısını giriniz."));
+            //for()ile 1'den n'e kadar yazdıralım.
+            for(s=1; s<=n; s++)
+            document.write(s+",");
+            document.write("<br>");
+            // while() ile 1'den n'e kadar yazdıralım.
+            s=1;
+            while(s<=n)
+            {
+                document.write(s+",")
+                s++;
+            }
+
+        
+            document.write("<br>"); 
+            document.write("<br>");
+            // 1'den x'e kadar olan sayıların toplamını yapalım.
+            // Değişkenlerimizi tanımlayalım.
+            var x,a,toplam=0;
+
+            // X değerini okuyalım.
+            x=Number(prompt("Sayınızı giriniz:"));
+            // for() ile 1'den x'e kadar toplama yapmasını sağlayalım.
+            for(a=1; a<=x; a++)
+            toplam=toplam+a;
+            document.write("Toplam="+toplam+"<br>");
+            //while() ile 1'den x'e kadar toplama yapmasını sağlayalım.
+            a=1, toplam=0;
+            while(a<=x)
+            {
+                toplam=toplam+a; a++;
+            }
+            document.write("Toplam="+toplam+"<br>");
+
+        </script>
+        <script>
+            // N adet sayının ortalamasını bulalım.
+            // Değişkenleri tanımlayalım.
+            var n, s, sayi, toplam=0, ort=0;
+            // n değerimizi okuyalım.
+            n=Number(prompt("Adet sayısı giriniz:"));
+            // n adet sayıyı alalım ve toplayalım.
+            for(s=1; s<=n; s++)
+            {
+                sayi=Number(prompt("Sayı:"));
+                toplam=toplam+sayi;
+            }
+            // ortalamayı hesaplayıp yazalım.
+            ort=toplam/n;
+            document.write("Ortalama="+ort+"<br>");
+
+        </script>
+        <script>
+            //Faktöriel hesaplama
+            //Değişkenleri tanımlayalım
+            var n,s,f=1;
+            // n değerini okuyalım.
+            n=Number(prompt("n sayısını giriniz:"));
+            // 1'den n'e kadar sayıları çarpalım.
+            for(s=1;s<=n; s++)
+             f=f*s;
+            // Faktöriyeli yazdıralım.
+             document.write(n+"!="+f+"<br>");
+        </script>
+        <script>
+            //Girilen iki değer arasındaki sayıların toplamı
+            var x,y, toplam=0;
+            // x ve y değerlerini okuyalım
+            x=Number(prompt("x sayısını giriniz:"));
+            y=Number(prompt("y sayısını giriniz:"));
+            //1 'den n 'e kadar olan sayıları çarpalım.
+            for(; x<=y; x++)
+              toplam=toplam+x;
+
+              /*
+              while döngüsüyle yazsaydık;
+              while(x<=y){
+                toplam=toplam+x;
+                x++;
+              }
+              */
+            //Sonucu yazalım
+            document.write(toplam+"<br>");
+        </script>
+    </body>
+    </html>
