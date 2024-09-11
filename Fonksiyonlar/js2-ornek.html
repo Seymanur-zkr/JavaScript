@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+ </head>
+<body>
+    <script>
+        //İlk önce fonksiyon tanımlayalım.
+        function yaz(deger){
+            document.write(deger+"<br>");
+        }
+        // Fonksiyonu kullanalım.
+        yaz("Adınız");
+        yaz(9899);
+        
+        
+        ad="Adınız";
+        yaz(ad);
+
+        yas=33;
+        yaz(yas);
+        
+    </script>
+
+
+    <script>
+        // Dışarıdan girilen N defa fonksiyonumuzu çalıştıralım.
+        // Fonksiyonumuzu oluşturalım.
+        function merhaba()
+        {
+            document.write("merhaba<br>");
+        }
+        var n,s;
+        n=Number(prompt(" Sayınızı giriniz:"));
+        // Merhaba fonksiyonumuzu N defa çalıştıralım.
+        for(s=1; s<=n; s++)
+        merhaba();
+    </script>
+
+
+
+    <script>
+        //Fonksiyonumuzu oluşturalım.
+        function kare(sayi)
+        {
+            var karesi=sayi*sayi;
+            return karesi;
+        }
+        // Ekrandan sayıyı alalım.
+        var x=Number(prompt("Karesi alınacak sayınız:"));
+        //Kare fonksiyonunun x ile çalıştıralım ve karex'e atayalım.
+        var karex=kare(x);
+        //işlem sonucu ekrana yazalım.
+        alert("Sayınız="+x+" Sayının karesi="+karex);
+    </script>
+
+
+
+    <script>
+        //Toplam fonksiyonunu yazalım.
+        function toplam(a,b)
+        {
+            var t=a+b;
+            return t;
+        }
+        // Ekrandan sayıları alalım.
+        var x=Number(prompt("İlk sayınız:"));
+        var y=Number(prompt("İkinci sayınız:"));
+        // Sayıların toplamını ekrana yazdıralım.
+        alert("Sayıların toplamı:"+toplam(x,y));
+    </script>
+
+
+
+     <script>
+        // 0'dan N'e kadar olan çift sayıları yazdıralım.
+        function yazx(x)
+        {
+            for(var s=0; s<=x; s=s+2)
+            document.write(s+"<br>");
+        } 
+        //Ekrandan n değerini alalım.
+        var n=Number(prompt("Çift sayıları yazdırmak için sayınızı giriniz:"));
+        // N'e kadar olan çift sayıları ekrana yazalım.
+        yazx(n);
+    </script> 
+
+
+
+    <script>
+        // X ile Y arasındaki sayıların yazdıralım.
+        function yazab(a,b)
+        {
+            for(; a<=b; a++)
+            document.write(a+"<br>");
+        }
+        //Ekrandan x ve y değerlerini alalım.
+        var x=Number(prompt("X:"));
+        var y=Number(prompt("y:"));
+        // X'ten y'ye kadar olan sayıları ekrana yazalım.
+        yazab(x,y);
+    </script>
+
+
+    <script>
+        // 1'den N'e kadar olan sayılarımızı toplayalım.
+        function ntopla(x)
+        {
+            var toplam=0;
+            for(var i=1; i<=x; i++)
+            toplam=toplam+i;
+        return toplam; // Toplamı ana programa dönüşütürür.
+        }
+        //Ekrandan n değerini alalım.
+        var n=Number(prompt("N değerini giriniz:"));
+        //1'den n'e kadar olan sayıların toplamını yazalım.
+        alert("n="+n+" 1'den n'e kadar olan sayıların toplamı="+ntopla(n)); 
+    </script>
+
+
+    <script>
+        // N faktöriyel hesaplayalım.
+        function f(x)
+        {
+            var f=1;
+            for( var i=1; i<=x; i++)
+            f=f*i;
+        return f; //F'i ana programa döndür.
+        }
+        // Ekrandan n değerini alalım.
+        var n=Number(prompt("Faktöriyeli alınacak sayınız:"));
+        //N faktöriyelini yazalım.
+        alert("n="+n+"  N faktöriyeli:"+f(n));
+    </script>
+</body>
+</html>
