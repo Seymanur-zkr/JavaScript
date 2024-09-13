@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+ </head>
+<body>
+    <h1>
+        Diziler
+    </h1>
+    <h4> Dizi Nedir ? </h4>
+    <p> Bellekte art arda yer alan ilişkili  değerler kümesine dizi denir.       <br>
+    Şu ana kadar oluşturduğumuz bir değişken içine sadece veri koyduk.           <br>
+    Örneğin;                                                                     <br>
+    var x=; komutuyla bir x değişkeni tanımaladık ve                             <br>
+    x=5; ile bir değer atadık.                                                   <br>
+    Eğer hafta isimli bir değişken oluşturup bu değişkene haftaların günlerini   <br>
+    atamak istersek o zaman dizi tanımlarız.<br> </p>
+    <h3> Dizi Tanımlama ve Değer Atama </h3>
+    <p>
+        var dizi1=[deger1,deger2,deger3];                                           <br>
+        var dizi2=new Array(5);                                                     <br>
+        var dizi3=new Array(deger1,deger2,deger3,..);                               <br>
+        Eğer birinci yöntemi kullanarak dizi tanımlayacaksanız size örnek vereyim;  <br>
+        var isimler=["volkan","şener",...];                                         <br>
+        var parametreler=["yeni","eski",2];                                          <br>
+
+        İkinci yöntemle dizi tanımlandıktan sonra elemanlar atanır.                  <br>
+        Örneğin x dizisine eleman atanacaksa aşağıdaki gibi yapılmalıdır.            <br>
+        var x=Array(5);          //5 elemanlı Dizi                                   <br>
+        x[0]=5;                  //dizinin ilk indeksi/indisi 0'dan başlar.          <br>
+        x[1]=22;                 //1 indeksli/indisli dizi elemanı                   <br>
+                                                                                     <br>
+        Diğer bir örnek;                                                             <br>
+        var hafta=new Array(7);                                                      <br>
+        hafta[0]="pazartesi";                                                        <br>
+        hafta[1]="salı";                                                             <br>
+        ...                                                                          <br>
+                                                                                     <br>
+        Üçüncü yöntemde hem dizi değişkeni tanımlanıyor hem de değerler atanıyorlar.<br>
+        var rakamlar=new Array(0,1,2,3,4,5,6,7,8,9);                                 <br>
+        var cevre=new Array(...,...,);                                               <br>
+    </p>
+    <h3>
+        Dizi Değişken Tanımlama Kuralları
+    </h3>
+    <p>
+        Dizi değişken oluştururken dikkat edilmesi gereken konular:                                       <br>
+        Dizi değişken adı normal değişken kurallarıyla aynı  olmalıdır.                                  <br>
+        Dizide farklı türde veriler olabilir.Örneğin; dizi içinde "selam",5,true gibi değerler olabilir. <br>
+        Dizi elemanlarının numarası sıfırdan başlar. Dizi elemanlarının numarasına indeks/indis denir.   <br>
+        Örneğin asal[2] ifadesi dizideki 2 numaralı indie sahip elemanı belirtir.                        <br>
+        <br> <br>
+        Dizi elemanlarına değer atamayı biliyoruz. Peki dizi elemanlarını nasıl yazdırırız ?             <br>
+        document.write(hafta[0]);       // dizinin 0 indeksli elemanını yazdırır.                        <br>
+        alert(hafta[1]);                // dizinin 1 indeksli elemanını yazdırır.                        <br>
+
+    </p>
+    <br><br>
+    <h3>
+        Dizi Elemanlarına Değer Atama ve Yazdırma 
+    </h3>
+    <p>
+        Dizi elemanlarına değer atamak için ;                     <br>
+        dizi[indeks]=değer;                                       <br>
+        var hafta=new Array(7); // hafta dizisi                   <br>
+        hafta[0]="pazartesi";                                     <br>
+        Dizi elemanlarını yazdırmak için;                         <br>
+        docuument.write(hafta[0]); // dizinin 0 indeksli elemanlı <br>
+        alert(hafta[0]);   // dizinin 0 indeksli elemanlı         <br>
+    </p>
+</body>
+</html>
