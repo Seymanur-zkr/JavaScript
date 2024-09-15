@@ -1,0 +1,92 @@
+<html>
+    <head>
+       <meta charset="utf-8">
+    </head>
+   <body>
+    <h1>
+        DOM(Document Object Model) Nedir?
+    </h1>
+    <p>
+        DOM bize tarayıcı ve HTML komutları arasındaki ilişki ve hiyeraşi konusunda bilgi veren bir modeldir.<br>
+        bu model sayesinde HTML sayfasındaki nesneler/komutlar seçilip işlem yapılabilir.<br>
+        DOM'da her HTML komutu bir nesne olarak davranır. Bu özellikten faydalanarak HTML komutlarında aşağıdaki işlemler yapılabilir.<br>
+        Sayfaya HTML kodlarının eklenmesi veya silinmesi <br>
+        HTML komutlarının içeriklerinin değiştirilmesi   <br>
+        HTML komutlarının özelliklerinin değiştirilmesi  <br>
+        CSS kodlarının değiştirilmesi                    <br>
+        HTML olaylarının tetiklenmesi                    <br>
+    </p>
+    <br>
+    <h3>
+        Document Nesnesi
+    </h3>
+    <p>
+        Document nesnesi tarayıcıdaki HTML sayfasını temsil eder.Document nesnesini kullanarak <br>
+        sayfadaki resim veya form elemanı gibi tüm nesnelere erişebiliriz.<br> 
+        HTML komutlarının seçimi için aşağıdaki yöntemler kullanılabilir: <br> 
+        document.getElementById(id)                        //ID özelliği ile seçilir  <br> 
+        document.getElementsByTagName(name)                //Tag adına göre seçilir   <br> 
+        document.getElementsByClassName(name)              //Class adına göre seçilir <br> <br>
+       
+        document.getElementsByTagName("p");                //Tüm p taglarını/komutlarını bul/seç demektir.<br>
+        var x = document.getElementById("main");           //Önce ID değeri “main” olan elemanı seç, daha  demektir.<br>
+        var y = x.getElementsByTagName("p");               //sonra da onun içindeki p taglarını seç demektir.<br>
+        var x = document.getElementsByClassName("intro");  //Sınıf/class adı “intro” olan komutu seç ve x değişkenine ata  demektir.<br>
+        var x = document.querySelectorAll("p.intro");      //CSS seçici ile komut seçmek için kullanılır. Class özelliği “intro” olan paragrafları seç demektir.<br>
+    </p>
+    <h3>
+        HTML Komutlarının İçeriğini Değiştirmek
+    </h3>
+    <p>
+        HTML komutlarının içeriğini veya özelliğini değiştirmek için aşağıdaki yöntemler kullanılabilir: <br>
+        komut.innerHTML=içerik                <br>
+        komut.özellik=değer                   <br>
+        komut.setAttribute(özellik,değer)     <br>
+        komut.style.property=yeni_stil        <br>
+    </p>
+     <!--
+        Örnekler
+        var x= “deneme”; 
+        document.getElementById(test).innerHTML = x;  //ID özelliği test olan komutun içeriğine x değişkenini ata. 
+        var komut = document.getElementById("header"); //ID özelliği “header” olan komutu “komut” değişkenine ata.
+        komut.innerHTML = "Yeni içerik";               // Daha sonra da “komut” değişkeninin içeriğine “Yeni içerik” değerini ata. 
+
+        <img id="resim" src="bayrak.gif">              //ID değeri resim olan nesnenin “src” özelliğini 
+        <script>                                       //“flama.jpg” yap. Böylece bir resmi kodla değiştirmiş oluruz .
+        document.getElementById("resim").src = "flama.jpg"; 
+        </script> 
+
+        <p id="p2">Merhaba Dünya!</p>                  //ID özelliği “p2” olan komutun “color” özelliğini 
+        <script>                                       //(rengini) “blue” yap. 
+        document.getElementById("p2").style.color = "blue"; 
+        </script> 
+ 
+     -->
+     <h2>
+        HTML Olayları (Eventhandler)
+     </h2>
+     <p>
+        HTML DOM kullanılarak belirli olaylar meydana geldiğinde belirli  komutların çalışmasını sağlayabilirsiniz.  <br>
+        Örneğin fare ile bir butona tıklandığında (click olayı) belli bir fonksiyonun çalışmasını sağlayabilirsiniz. <br>
+        Ya da sayfa açıldığında (onload olayı) belirli kodların otomatik olarak çalışmasını sağlayabilirsiniz.       <br>
+        Olayları kullanarak yapılan programlama mantığına Olay Güdümlü Programlama denir. Bu mantık sadece           <br>
+        JavaScript dilinde değil, C# gibi  diğer dillerde de kullanılır.Bazı açıklamalar;                            <br>
+        onload      // Sayfanın yüklenmesi/açılması bittiğinde “onload” olayı meydana gelir.    <br>
+        onunload    // Sayfanın kapanması                                                       <br>
+        onresize    // Sayfa boyutu değiştiğinde                                                <br>
+        onerror     // Sayfada bir JavaScript hatası olduğunda                                  <br> 
+        onfocus     // Bir form elemanı aktif olduğunda                                         <br>
+        onblur      // Bir form elemanı pasif olduğunda                                         <br>
+        onchange    // Form elemanının değeri değiştiğinde                                      <br>
+        onsubmit    // Form onaylandığında                                                      <br>
+        onreset     // Form reset edildiğinde                                                   <br>
+        oninvalid   // Forma girilen eleman geçerli değilse                                     <br> 
+        oninput     // Forma veri girilirse                                                     <br>
+        onclick     // Bir elemana tıklandığında                                                <br>
+        ondblclick  // Bir elemana çift tıklandığında                                           <br> 
+        ondrag      // Bir eleman sürüklendiğinde                                               <br>
+        onmouseover // Bir elemanın üzerine fare geldiğinde                                     <br>
+        onmouseout  // Fare eleman dışına çıktığında                                            <br>
+     </p>
+   </body>
+   </html>
