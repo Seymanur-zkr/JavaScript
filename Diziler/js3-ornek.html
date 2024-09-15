@@ -1,0 +1,65 @@
+<html>
+    <head>
+       <meta charset="utf-8">
+    </head>
+   <body>
+    <script>
+        //Dizi oluşturalım.
+        // var arkadaşlar=["isim","isim1","isim2"];
+        var arkadaslar=new Array(4);
+      /* Dışarıdan alarak yapalım dizimizi.
+        arkadaslar[0]=prompt("0. eleman:");
+        arkadaslar[1]=prompt("1. eleman:");
+        arkadaslar[2]=prompt("2. eleman:");
+        arkadaslar[3]=prompt("3. eleman:");
+      */
+
+         // Ya da for ile dışarıdan alalım.
+         for(var i=0; i<4; i++)
+            arkadaslar[i]=prompt(i+"indisli arkadaşın adı:");
+
+        // Diziyi yazdıralım.
+       // document.write(arkadaslar);
+        // For ile diziyi yazdıralım.
+        for(var i=0; i<=3; i++)
+        document.write(arkadaslar[i]+"<br>");
+    </script>
+
+    <p>
+        Dizi elemanlarının ekrandan okunması için genelde for() döngüsü       <br>
+        kullanılır.5 elemanlı bir dizi olduğunu düşünürsek dizi elemanlarının <br>
+        ekrandan okunması ve ekrana yazılması aşağıdaki gibi olur;             <br><br>
+      </p>
+    <script>
+      /*
+        var dizi = new Array(5); 
+        var i;     //dizi indeksi
+
+        for(i=0; i<5; i++) //dizi elemanlarını okutalım.
+        //okunan her değeri dizinin i.indeksine atayalım
+        {
+          dizi[i]=prompt("gir dizi indeksi"+i+":");
+        }
+
+        for(i=0; i<5; i++) //dizi elemanlarını yazdıralım.
+        {
+          document.write(dizi[i]+"<br"); 
+        }
+        */
+    </script>
+    <p>
+      Dizi elemanlarını kullanarak matematiksel işlemlerde yapabilirsiniz.         <br>
+      Örneğin bir dizinin 2. indeksi ile 4. indeksini toplayıp ikitop değişkenine  <br>
+      atamak isterseniz veya dizi elemanlarının ortalamasını bulmak isterseniz     <br>
+      aşağıdakileri yazabilirsiniz;                                                <br>
+      <br>  
+      var dizi=[1,2,3,4,5];                       <br>
+      var ikitop=0,dizitoplam=0;                  <br>
+      ikitop=dizi[2]+dizi[4];                     <br>
+      for(i=0;i küçüktür 5; i++)                  <br>
+      {dizitoplam=dizitoplam+dizi[i];}            <br>
+      document.write("ortalama:"+dizitoplam/5);   <br>
+
+    </p>
+   </body>
+   </html>
